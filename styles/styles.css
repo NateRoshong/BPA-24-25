@@ -1,9 +1,30 @@
 body{
     background-color: rgb(27, 27, 27);
     color: white;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 33.33%;
+}
+
+.logo-cont {
+    text-align: center;
+}
+
+.nav-custom {
+    width: 33.33%;
 }
 
 .nav-brands {
     padding-left: .1em;
     color: white;
+}
+
+.nav-logo {
+    width: 5em;
 }
