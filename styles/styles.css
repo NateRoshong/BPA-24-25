@@ -28,3 +28,7 @@ body{
 .nav-logo {
     width: 5em;
 }
+
+.inline {
+    display: inline;
+}
