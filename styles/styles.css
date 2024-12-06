@@ -4,31 +4,27 @@ body{
     width: 100%;
 }
 
-.navbar {
-    width: 100%;
-}
-
-.navbar-nav {
-    width: 33.33%;
-}
-
-.logo-cont {
-    text-align: center;
-}
-
-.nav-custom {
-    width: 33.33%;
+nav {
+    padding-top: .8em;
 }
 
 .nav-brands {
-    padding-left: .1em;
-    color: white;
+    padding-left: .8em;
+}
+
+.nav-brands li {
+    padding-left: .4em;
 }
 
 .nav-logo {
     width: 5em;
 }
 
-.inline {
-    display: inline;
+.navbar-etc {
+    padding-right: .8em;
+    justify-content: flex-end;
+}
+
+.navbar-etc li {
+    padding-right: .4em;
 }
