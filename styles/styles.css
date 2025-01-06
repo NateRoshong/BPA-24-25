@@ -34,7 +34,7 @@ nav {
 }
 .BGimg{
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: -4;
     
 }
