@@ -39,16 +39,19 @@
                     <a class="navbar-brand col" href="#"><img src="imgs/logo.png" width="64px"></a>
                 </div>
                 <div class="col">
-                    <!--COLLAPSE BUTTON-->
-                    <button class="btn btn-primary collapse.show" data-bs-toggle="collapse" data-bs-target="#navbar-nav-links" aria-expanded="false" aria-controls="navbar-nav-links"></button>
-                    <!--ETC LINKS-->
-                    <ul class=" navbar-etc collapse navbar-collapse" id="navbar-nav-links">
-                        <li class="nav-item"><a class="nav-link" href="#">BAND</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">MUSIC</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">STORE</a></li>
+                    <div class="dropdown">
+                        <button type="button" id="navbar-dropdown" class="btn" data-bs-toggle="dropdown">
+                            <div></div><div></div><div></div>
+                          </button>
+                        <ul class="dropdown-menu navbar-etc">
+                            <li class="nav-item"><a class="nav-link" href="#">BAND</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">MUSIC</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">EVENTS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">STORE</a></li>
+                        </ul>
+                      </div> 
                     </ul>
                 </div>
             </div>
