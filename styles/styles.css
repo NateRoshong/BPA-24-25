@@ -5,7 +5,7 @@ body{
 }
 
 nav {
-    padding: .1em 0 .8em 0;
+    padding: .4em 0em .8em 0em;
     background-color: rgb(27, 27, 27);
     color: white;
     width: 100%;
@@ -24,17 +24,26 @@ nav {
 }
 
 .navbar-etc {
-    padding-right: .8em;
-    justify-content: flex-end;
-    list-style: none;
+    padding: .4em;
 }
 
-.navbar-etc li {
-    padding-right: .4em;
+#navbar-dropdown div {
+    padding: .11em;
+    margin: .2em;
+    height: .2em;
+    width: 1em;
+    border-radius: 5px;
+    background-color: white;
 }
 .BGimg{
     width: 100%;
     position: absolute;
     z-index: -4;
     
+}
+
+footer {
+    z-index: -3;
+    height: 150px;
+    background-color: rgb(27, 27, 27);
 }
