@@ -23,6 +23,7 @@ nav {
 .navbar-etc {
     padding-right: .8em;
     justify-content: flex-end;
+    list-style: none;
 }
 
 .navbar-etc li {
