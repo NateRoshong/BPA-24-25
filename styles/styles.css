@@ -32,3 +32,9 @@ nav {
 .navbar-etc li {
     padding-right: .4em;
 }
+.BGimg{
+    width: 100%;
+    position: fixed;
+    z-index: -4;
+    
+}
