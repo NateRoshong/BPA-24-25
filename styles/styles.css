@@ -1,11 +1,14 @@
 body{
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(185, 9, 9);
     color: white;
     width: 100%;
 }
 
 nav {
-    padding-top: .8em;
+    padding: .1em 0 .8em 0;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 100%;
 }
 
 .nav-brands {
