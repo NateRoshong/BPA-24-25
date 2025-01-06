@@ -41,3 +41,9 @@ nav {
     z-index: -4;
     
 }
+
+footer {
+    z-index: -3;
+    height: 150px;
+    background-color: rgb(27, 27, 27);
+}
