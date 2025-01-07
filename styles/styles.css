@@ -1,3 +1,5 @@
+/*ELEMENT STYLING*/
+
 body{
     background-color: rgb(27, 27, 27);
     color: white;
@@ -6,10 +8,17 @@ body{
 
 nav {
     padding: .4em 0em .8em 0em;
-    background-color: rgb(27, 27, 27);
     color: white;
     width: 100%;
 }
+
+footer {
+    z-index: -3;
+    height: 150px;
+    background-color: rgb(27, 27, 27);
+}
+
+/*CLASS STYLING*/
 
 .nav-brands {
     padding-left: .8em;
@@ -25,6 +34,31 @@ nav {
 
 .navbar-etc {
     padding: .4em;
+    color: black;
+    background-color: rgba(0, 174, 208, 0.9);
+    border-radius: 0;
+    border: 1px black solid;
+}
+
+.background_img{
+    width: 100%;
+    position: absolute;
+    z-index: -4;
+    height: 1000px;
+}
+
+/*ID STYLING*/
+
+#navbar {
+    background-color: rgba(27, 27, 27, .2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar-dropdown {
+    margin-right: .4em;
 }
 
 #navbar-dropdown div {
@@ -34,16 +68,4 @@ nav {
     width: 1em;
     border-radius: 5px;
     background-color: white;
-}
-.BGimg{
-    width: 100%;
-    position: absolute;
-    z-index: -4;
-    
-}
-
-footer {
-    z-index: -3;
-    height: 150px;
-    background-color: rgb(27, 27, 27);
 }
