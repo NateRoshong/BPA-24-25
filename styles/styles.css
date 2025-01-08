@@ -1,3 +1,8 @@
+/*ROOT*/
+:root {
+    --bs-dropdown-min-width: 0 !important;
+}
+
 /*@KEYFRAMES*/
 
 
@@ -111,8 +116,23 @@ footer {
 }
 
 @media (max-width: 599px) {
-    .nav-brands li {
+    .nav-brands {
         display: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 1px;
+        border: 1px black solid;
+    }
+
+    .nav-brands ul {
+        width: 80px;
+        min-width: 0!important;
+    }
+
+    .nav-brands li {
+        padding-left: 0;
     }
 
     #social-media {
