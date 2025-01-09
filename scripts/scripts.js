@@ -1,4 +1,4 @@
-//JQUERIE SCRIPT START
+//JQUERY SCRIPT START
 $(document).ready(function() {
     function adjustNavBrandsHolder() {
         if ($(window).width() <= 599) {
