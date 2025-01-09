@@ -44,7 +44,7 @@ footer {
 
 .navbar-etc {
     color: white;
-    background-color: );
+    background-color: rgb(27,27,27);
     border-radius: 1px;
     border: 1px black solid;
     font-family: 'Roboto', sans-serif;
@@ -68,7 +68,7 @@ footer {
     width: 100%;
     position: fixed;
     z-index: -4;
-    =
+    
 }
 
 /*ID STYLING*/
