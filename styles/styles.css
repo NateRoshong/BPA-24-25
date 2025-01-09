@@ -8,6 +8,7 @@
 
 
 /*ELEMENT STYLING*/
+/*design consistency note: selectors are mentioned in the order they appear on index.html*/
 
 body{
     background-color: rgb(27, 27, 27);
@@ -23,7 +24,7 @@ nav {
 }
 
 footer {
-    z-index: -3;
+    z-index: 10;
     height: 150px;
     background-color: rgb(27, 27, 27);
 }
@@ -57,7 +58,7 @@ footer {
     padding: .14em .4em;
 }
 .filler {
-        padding: 40px;
+        padding: 15vw;
 }
 
 .navbar-etc li:hover {
@@ -68,7 +69,6 @@ footer {
     width: 100%;
     position: fixed;
     z-index: -4;
-    
 }
 
 /*ID STYLING*/
@@ -85,6 +85,8 @@ footer {
     display: none;
     padding: .4em;
     margin-left: 1em;
+    background-color: rgba(27, 27, 27, .85);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 #navbar-dropdown {
@@ -107,6 +109,8 @@ footer {
 #bandName {
     color: rgb(0, 183, 255);
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 /*@MEDIAQUERIES*/
