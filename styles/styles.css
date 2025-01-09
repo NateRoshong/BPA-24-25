@@ -65,17 +65,11 @@ footer {
     background-color: rgba(0, 174, 208, 0.3);
 }
 
-.background_img{
-    width: 100%;
-    position: fixed;
-    z-index: -4;
-}
 
-.sticky{
-    position:static;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.background-img{
+    background-image: url("imgs/purpleguitar.jpg");
+    background-size: cover;
+
 }
 
 /*ID STYLING*/
