@@ -19,6 +19,7 @@ nav {
     padding: .4em 0em .8em 0em;
     color: white;
     width: 100%;
+    
 }
 
 footer {
@@ -43,7 +44,7 @@ footer {
 
 .navbar-etc {
     color: white;
-    background-color: rgba(27, 27, 27, 1);
+    background-color: );
     border-radius: 1px;
     border: 1px black solid;
     font-family: 'Roboto', sans-serif;
@@ -55,6 +56,9 @@ footer {
     width: 100%;
     padding: .14em .4em;
 }
+.filler {
+        padding: 40px;
+}
 
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
@@ -62,9 +66,9 @@ footer {
 
 .background_img{
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: -4;
-    height: 1000px;
+    =
 }
 
 /*ID STYLING*/
@@ -98,6 +102,11 @@ footer {
     width: 1.5em;
     border-radius: 5px;
     background-color: white;
+}
+
+#bandName {
+    color: rgb(0, 183, 255);
+    text-align: center;
 }
 
 /*@MEDIAQUERIES*/
@@ -138,4 +147,8 @@ footer {
     #social-media {
         display: block;
     }
+   
 }
+
+
+   
