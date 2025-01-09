@@ -1,7 +1,7 @@
-//JQUERIE SCRIPT START
+//JQUERY SCRIPT START
 $(document).ready(function() {
     function adjustNavBrandsHolder() {
-        if ($(window).width() <= 599) {
+        if ($(window).width() <= 582) {
             $('#nav-brands-holder').addClass('dropdown-menu');
         } else {
             $('#nav-brands-holder').removeClass('dropdown-menu');
