@@ -58,7 +58,7 @@ footer {
     padding: .14em .4em;
 }
 .filler {
-        padding: 15vw;
+        padding: 14vw;
 }
 
 .navbar-etc li:hover {
@@ -69,6 +69,13 @@ footer {
     width: 100%;
     position: fixed;
     z-index: -4;
+}
+
+.sticky{
+    position:static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*ID STYLING*/
