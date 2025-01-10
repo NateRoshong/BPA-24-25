@@ -66,13 +66,12 @@ footer {
     width: 100%;
     padding: .14em .4em;
 }
-.filler {
-    padding: 14vw;
-}
+
+/*I removed this for a reason, if you must use .filler to space something out, use padding or inline styling! This cleans up both index AND styles*/
 
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
-}
+} 
 
 
 
