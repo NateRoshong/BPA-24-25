@@ -58,7 +58,7 @@ footer {
     padding: .14em .4em;
 }
 .filler {
-        padding: 14vw;
+    padding: 14vw;
 }
 
 .navbar-etc li:hover {
@@ -66,12 +66,25 @@ footer {
 }
 
 
+
+
+.test{
+     background-color: aliceblue;
+     color: black;
+     text-align: center;
+     padding: 35vw 0;
+     box-shadow: 10px 5px 5px red;
+}
 .background-img{
-    background-image: url("imgs/purpleguitar.jpg");
-    background-size: cover;
+    background-image: url("../imgs/purpleguitar.jpg");
+    background-size:contain;
+    padding: 30vw 0vw 26vw 0vw;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 
 }
-
 /*ID STYLING*/
 
 #navbar {
