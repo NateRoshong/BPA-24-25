@@ -3,6 +3,15 @@
     --bs-dropdown-min-width: 0 !important;
 }
 
+
+
+/*FONT-FACE*/
+
+@font-face {
+    font-family: 'VanHelsing';
+    src: url('/fonts/vanHelsing.ttf') format('truetype');
+}
+
 /*@KEYFRAMES*/
 
 
