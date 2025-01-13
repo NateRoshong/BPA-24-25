@@ -21,7 +21,7 @@
 /*ELEMENT STYLING*/
 /*design consistency note: selectors are mentioned in the order they appear on index.html*/
 
-body{
+body {
     background-color: rgb(27, 27, 27);
     color: white;
     width: 100%;
@@ -60,7 +60,7 @@ footer {
 
 .navbar-etc {
     color: white;
-    background-color: rgb(27,27,27);
+    background-color: rgb(27, 27, 27);
     border-radius: 1px;
     border: 1px black solid;
     font-family: 'Anybody', sans-serif;
@@ -77,15 +77,17 @@ footer {
 
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
-} 
-
-.test{
-     background-color: aliceblue;
-     color: black;
-     text-align: center;
-     padding: 35vw 0;
-     box-shadow: 10px 5px 5px red; /*note: is red for development purposes*/
 }
+
+.band-portrait {
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 35vw 0;
+    box-shadow: 10px 5px 5px red;
+    /*note: is red for development purposes*/
+}
+
 /* background image behavior rules
 .background-img{
     background-image: url("../imgs/purpleguitar.jpg");
@@ -103,7 +105,7 @@ footer {
     margin-left: 1em;
     background-color: rgba(27, 27, 27, .2);
     color: rgb(227, 227, 227);
-    font-family: 'Anybody' ,sans-serif;
+    font-family: 'Anybody', sans-serif;
     font-weight: 700;
 }
 
@@ -112,7 +114,7 @@ footer {
     padding: .2em;
 }
 
-#navbar-dropdown:hover{
+#navbar-dropdown:hover {
     background-color: rgba(27, 27, 27, .4);
 }
 
@@ -143,7 +145,7 @@ footer {
     .nav-brands li {
         padding-left: .4em;
     }
-    
+
 }
 
 @media (max-width: 599px) {
@@ -159,7 +161,7 @@ footer {
 
     .nav-brands ul {
         width: 80px;
-        min-width: 0!important;
+        min-width: 0 !important;
     }
 
     .nav-brands li {
@@ -169,8 +171,5 @@ footer {
     #social-media {
         display: block;
     }
-   
+
 }
-
-
-   
