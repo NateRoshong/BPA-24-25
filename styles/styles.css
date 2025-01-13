@@ -88,6 +88,12 @@ footer {
     /*note: is red for development purposes*/
 }
 
+.single h1 {
+    font-family: 'Anybody', sans-serif;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+}
+
 .single img {
     width: 512px;
 }
