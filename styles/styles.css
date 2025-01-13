@@ -5,12 +5,14 @@
 
 
 
-/*FONT-FACE*/
+/*FONTS*/
 
 @font-face {
     font-family: 'VanHelsing';
     src: url('/fonts/vanHelsing.ttf') format('truetype');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*@KEYFRAMES*/
 
@@ -29,7 +31,11 @@ nav {
     padding: .4em 0em .8em 0em;
     color: white;
     width: 100%;
-    
+    background-color: rgba(27, 27, 27, .2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 footer {
@@ -57,7 +63,7 @@ footer {
     background-color: rgb(27,27,27);
     border-radius: 1px;
     border: 1px black solid;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Anybody', sans-serif;
     font-size: .95em;
     font-weight: 400;
 }
@@ -72,9 +78,6 @@ footer {
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
 } 
-
-
-
 
 .test{
      background-color: aliceblue;
@@ -95,20 +98,14 @@ footer {
 }
 /*ID STYLING*/
 
-#navbar {
-    background-color: rgba(27, 27, 27, .2);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
 #social-media {
     display: none;
     padding: .4em;
     margin-left: 1em;
-    background-color: rgba(27, 27, 27, .85);
-    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(27, 27, 27, .2);
+    color: rgb(227, 227, 227);
+    font-family: 'Anybody' ,sans-serif;
+    font-weight: 700;
 }
 
 #navbar-dropdown {
@@ -131,7 +128,7 @@ footer {
 #bandName {
     color: rgb(0, 183, 255);
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Anybody', sans-serif;
     font-weight: 600;
 }
 
