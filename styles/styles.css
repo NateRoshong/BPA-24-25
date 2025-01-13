@@ -79,13 +79,17 @@ footer {
     background-color: rgba(0, 174, 208, 0.3);
 }
 
-.band-portrait {
-    background-color: aliceblue;
-    color: black;
+.single {
+    background-color: rgb(227, 227, 227);
     text-align: center;
-    padding: 35vw 0;
+    padding: 15vw 0;
     box-shadow: 10px 5px 5px red;
+    height: 1024px;
     /*note: is red for development purposes*/
+}
+
+.single img {
+    width: 512px;
 }
 
 /* background image behavior rules
