@@ -84,7 +84,7 @@ footer {
      color: black;
      text-align: center;
      padding: 35vw 0;
-     box-shadow: 10px 5px 5px red;
+     box-shadow: 10px 5px 5px red; /*note: is red for development purposes*/
 }
 /* background image behavior rules
 .background-img{
