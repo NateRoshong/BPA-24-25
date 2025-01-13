@@ -130,13 +130,6 @@ footer {
     background-color: white;
 }
 
-#bandName {
-    color: rgb(0, 183, 255);
-    text-align: center;
-    font-family: 'Anybody', sans-serif;
-    font-weight: 600;
-}
-
 /*@MEDIAQUERIES*/
 
 @media (min-width: 900px) {
