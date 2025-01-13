@@ -86,7 +86,8 @@ footer {
      padding: 35vw 0;
      box-shadow: 10px 5px 5px red;
 }
-/*.background-img{
+/* background image behavior rules
+.background-img{
     background-image: url("../imgs/purpleguitar.jpg");
     background-size:contain;
     padding: 30vw 0vw 26vw 0vw;
