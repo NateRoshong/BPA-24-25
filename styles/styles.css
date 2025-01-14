@@ -135,10 +135,19 @@ p {
 
 .tour-event {
     border-top: 1px solid rgb(227, 227, 227);
+    text-align: center;
 }
 
-.carousel-indicators {
-    
+.tour-event .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tour-event .col-4:first-child {
+    flex-direction: column;
+    text-align: left;
 }
 
 .background-img{
