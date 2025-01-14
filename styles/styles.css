@@ -35,9 +35,12 @@ footer {
 }
 
 h1 {
-    font-family: vanHelsing, sans-serif;
+    font-family: 'vanHelsing', sans-serif;
 }
 
+p {
+    font: 'Anybody', sans-serif;
+}
 /*CLASS STYLING*/
 .nav-brands {
     padding-left: .8em;
