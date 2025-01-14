@@ -1,26 +1,14 @@
-/*ROOT*/
-:root {
-    --bs-dropdown-min-width: 0 !important;
-}
-
-
-
 /*FONTS*/
-
 @font-face {
     font-family: 'VanHelsing';
     src: url('/fonts/vanHelsing.ttf') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
-
 /*@KEYFRAMES*/
-
 
 
 /*ELEMENT STYLING*/
 /*design consistency note: selectors are mentioned in the order they appear on index.html*/
-
 body{
     background-color: rgb(27, 27, 27);
     color: white;
@@ -45,7 +33,6 @@ footer {
 }
 
 /*CLASS STYLING*/
-
 .nav-brands {
     padding-left: .8em;
 }
@@ -54,13 +41,17 @@ footer {
     padding-left: .4em;
 }
 
+.nav-brands .fa-brands {
+    color: rgb(57, 57, 57)
+}
+
 .nav-logo {
     width: 5em;
 }
 
 .navbar-etc {
     color: white;
-    background-color: rgb(27,27,27);
+    background-color: rgb(27, 27, 27);
     border-radius: 1px;
     border: 1px black solid;
     font-family: 'Anybody', sans-serif;
@@ -73,8 +64,6 @@ footer {
     padding: .14em .4em;
 }
 
-/*I removed this for a reason, if you must use .filler to space something out, use padding or inline styling! This cleans up both index AND styles*/
-
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
 } 
@@ -83,9 +72,11 @@ footer {
     background-color: rgb(227, 227, 227);
     text-align: center;
     padding: 15vw 0;
-    box-shadow: 10px 5px 5px red;
+    box-shadow: 0 0 50px rgb(227, 227, 227);
     height: 1024px;
-    /*note: is red for development purposes*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .single h1 {
@@ -96,9 +87,27 @@ footer {
 
 .single img {
     width: 512px;
+    margin-bottom: 0;
 }
 
+.single button {
+    background-color: rgb(87, 187, 187);
+    color: rgb(255, 255, 255);
+    font-family: 'Anybody', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    padding: .1em 1em .4em 1em;
+    border-radius: 18px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    transition: background-color .4s ease, padding-top .8s ease;
+    margin-top: 0;
+}
 
+.single button:hover {
+    background-color: rgb(17, 117, 117);
+    padding-top: .4em;
+}
 
 .background-img{
     background-image: url("../imgs/purpleguitar.jpg");
@@ -108,8 +117,8 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-/*ID STYLING*/
 
+/*ID STYLING*/
 #social-media {
     display: none;
     padding: .4em;
@@ -118,6 +127,10 @@ footer {
     color: rgb(227, 227, 227);
     font-family: 'Anybody' ,sans-serif;
     font-weight: 700;
+}
+
+#contact-us-button {
+    display: none;
 }
 
 #navbar-dropdown {
@@ -145,10 +158,9 @@ footer {
 }
 
 /*@MEDIAQUERIES*/
-
 @media (min-width: 900px) {
     .nav-brands li {
-        padding-left: 1em;
+        padding-left: .8em;
     }
 }
 
@@ -166,7 +178,6 @@ footer {
         margin: 0;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.85);
-        border-radius: 1px;
         border: 1px black solid;
     }
 
@@ -185,5 +196,14 @@ footer {
    
 }
 
+@media (max-width: 512px) {
+    .single h1 {
+        font-size: 1.2em;
+        margin-top: 6em;
+    }
 
+    .single img {
+        width: 100%;
+    }
+}
    
