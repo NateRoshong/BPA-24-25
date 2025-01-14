@@ -21,7 +21,7 @@
 /*ELEMENT STYLING*/
 /*design consistency note: selectors are mentioned in the order they appear on index.html*/
 
-body {
+body{
     background-color: rgb(27, 27, 27);
     color: white;
     width: 100%;
@@ -60,7 +60,7 @@ footer {
 
 .navbar-etc {
     color: white;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(27,27,27);
     border-radius: 1px;
     border: 1px black solid;
     font-family: 'Anybody', sans-serif;
@@ -77,7 +77,7 @@ footer {
 
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
-}
+} 
 
 .single {
     background-color: rgb(227, 227, 227);
@@ -98,7 +98,8 @@ footer {
     width: 512px;
 }
 
-/* background image behavior rules
+
+
 .background-img{
     background-image: url("../imgs/purpleguitar.jpg");
     background-size:contain;
@@ -106,7 +107,7 @@ footer {
     margin: 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}*/
+}
 /*ID STYLING*/
 
 #social-media {
@@ -115,7 +116,7 @@ footer {
     margin-left: 1em;
     background-color: rgba(27, 27, 27, .2);
     color: rgb(227, 227, 227);
-    font-family: 'Anybody', sans-serif;
+    font-family: 'Anybody' ,sans-serif;
     font-weight: 700;
 }
 
@@ -124,7 +125,7 @@ footer {
     padding: .2em;
 }
 
-#navbar-dropdown:hover {
+#navbar-dropdown:hover{
     background-color: rgba(27, 27, 27, .4);
 }
 
@@ -134,6 +135,13 @@ footer {
     width: 1.5em;
     border-radius: 5px;
     background-color: white;
+}
+
+#bandName {
+    color: rgb(0, 183, 255);
+    text-align: center;
+    font-family: 'Anybody', sans-serif;
+    font-weight: 600;
 }
 
 /*@MEDIAQUERIES*/
@@ -148,7 +156,7 @@ footer {
     .nav-brands li {
         padding-left: .4em;
     }
-
+    
 }
 
 @media (max-width: 599px) {
@@ -164,7 +172,7 @@ footer {
 
     .nav-brands ul {
         width: 80px;
-        min-width: 0 !important;
+        min-width: 0!important;
     }
 
     .nav-brands li {
@@ -174,5 +182,8 @@ footer {
     #social-media {
         display: block;
     }
-
+   
 }
+
+
+   
