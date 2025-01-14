@@ -8,7 +8,9 @@
 
 
 /*ELEMENT STYLING*/
-/*design consistency note: selectors are mentioned in the order they appear on index.html*/
+/*design consistency notes:
+ selectors are mentioned in the order they appear on index.html
+*/
 body{
     background-color: rgb(27, 27, 27);
     color: white;
@@ -32,6 +34,13 @@ footer {
     background-color: rgb(27, 27, 27);
 }
 
+h1 {
+    font-family: 'vanHelsing', sans-serif;
+}
+
+p {
+    font: 'Anybody', sans-serif;
+}
 /*CLASS STYLING*/
 .nav-brands {
     padding-left: .8em;
