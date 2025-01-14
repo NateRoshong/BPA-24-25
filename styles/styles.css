@@ -118,6 +118,24 @@ p {
     padding-top: .4em;
 }
 
+.get-tickets {
+    background-color: rgb(17, 117, 117); /* Darker blue color */
+    color: rgb(255, 255, 255);
+    font-family: 'Anybody', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    padding: .2em 1em;
+    border-radius: 8px;
+    transition: background-color .4s ease;
+}
+
+.get-tickets:hover {
+    background-color: rgb(0, 87, 87); /* Even darker blue color for hover */
+}
+
+.tour-event {
+    border-top: 1px solid rgb(227, 227, 227);
+}
 .background-img{
     background-image: url("../imgs/purpleguitar.jpg");
     background-size:contain;
@@ -219,4 +237,3 @@ p {
         width: 100%;
     }
 }
-   
