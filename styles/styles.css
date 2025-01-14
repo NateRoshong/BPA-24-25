@@ -157,6 +157,10 @@ footer {
     font-weight: 600;
 }
 
+#tour {
+    height: 312px;
+}
+
 /*@MEDIAQUERIES*/
 @media (min-width: 900px) {
     .nav-brands li {
