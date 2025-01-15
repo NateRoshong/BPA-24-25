@@ -68,13 +68,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa-brands fa-apple fa-lg"></i></a>
               </li>
-              <li id="contact-us-button" class="nav-item">
-                <button class="btn nav-link">Contact Us</button>
-              </li>
             </ul>
           </div>
         </div>
-        <div class="col-4 text-center">
+        <div id="nav-logo" class="col-4 text-center">
           <!--Logo for navbar-->
           <a class="navbar-brand col" href="#">
             <img src="/imgs/stageFrightTypography(fin).png" width="124px"/>
@@ -91,12 +88,10 @@
               <!--END: Hamburger button html-->
             </button>
             <ul class="dropdown-menu navbar-etc">
-              <li class="nav-item"><a class="nav-link" href="#">BAND</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">MUSIC</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">STORE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tour">TOURS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#band">BAND</a></li>
+              <li class="nav-item"><a class="nav-link" href="/store.html">STORE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -106,9 +101,9 @@
 
     <main>
       <div class="single">
-        <h1>CHECK OUT OUR DEBUT SINGLE: <br> OVER THE UNDER</h1>
+        <h1>OUR DEBUT SINGLE: <br> OVER THE UNDER</h1>
         <img src="/imgs/releaseSingle.png" alt="Over The Under single"/>
-        <button class="btn">LISTEN NOW</button>
+        <button>LISTEN NOW</button>
       </div>
 
       <div id="tour">
@@ -201,80 +196,89 @@
         </div>
       </div>
 
-      <!--Carousel-->
-      <div id="band" class="carousel slide" data-bs-ride="carousel">
+      <div id="band">
 
-        <!--Indicators-->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#band" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#band" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#band" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#band" data-bs-slide-to="3"></button>
-        </div>
+        <!--Carousel-->
+        <div id="band-members" class="carousel slide" data-bs-ride="carousel">
 
-        <!--The slideshow-->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="/imgs/purpleguitar.jpg" alt="Band member 1" class="d-block w-100"/>
+          <!--Indicators-->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#band-members"  data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#band-members"  data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#band-members"  data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#band-members"  data-bs-slide-to="3"></button>
           </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <div>
-          <h3>Band Member 1</h3>
-          <p>Description for band member 1.</p>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="/imgs/purpleguitar.jpg" alt="Band member 2" class="d-block w-100"/>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <div>
-          <h3>Band Member 2</h3>
-          <p>Description for band member 2.</p>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="/imgs/purpleguitar.jpg" alt="Band member 3" class="d-block w-100"/>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <div>
-          <h3>Band Member 3</h3>
-          <p>Description for band member 3.</p>
-            </div>
-          </div>
-        </div>
-          </div>
-          <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="/imgs/purpleguitar.jpg" alt="Band member 4" class="d-block w-100"/>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <div>
-          <h3>Band Member 4</h3>
-          <p>Description for band member 4.</p>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
 
-        <!--Left and right controls-->
-        <button class="carousel-control-prev" type="button" data-bs-target="#band" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#band" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+          <!--The slideshow-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="/imgs/purpleguitar.jpg" alt="Band member 1"   class="d-block w-100"/>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div>
+            <h3>Band Member 1</h3>
+            <p>Description for band member 1.</p>
+              </div>
+            </div>
+          </div>
+            </div>
+            <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="/imgs/purpleguitar.jpg" alt="Band member 2"   class="d-block w-100"/>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div>
+            <h3>Band Member 2</h3>
+            <p>Description for band member 2.</p>
+              </div>
+            </div>
+          </div>
+            </div>
+            <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="/imgs/purpleguitar.jpg" alt="Band member 3"   class="d-block w-100"/>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div>
+            <h3>Band Member 3</h3>
+            <p>Description for band member 3.</p>
+              </div>
+            </div>
+          </div>
+            </div>
+            <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="/imgs/purpleguitar.jpg" alt="Band member 4"   class="d-block w-100"/>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div>
+            <h3>Band Member 4</h3>
+            <p>Description for band member 4.</p>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <!--Left and right controls-->
+          <button class="carousel-control-prev" type="button"   data-bs-target="#band-members" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button"   data-bs-target="#band-members" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <!--END: Carousel-->
+
+        <p id="about">
+          Stage Fright is a rock/metal band based in Cincinatti, OH. The band was formed in 2023 by friends BM1[guitar/vocals], BM2[guitar/vocals], BM3[bass], and BM4[drums] over their shared enjoyment for music. The band's debut single, "Over The Under," was released in 2024 and has since gained over 3 million streams across platforms. The band is currently on tour promoting their debut album, "The Midnight Echoes," which was released in January 2025. The band's music is a blend of heavy metal, metalcore, and hardcore punk, with influences from bands such as Killswitch Engage, 36 Crazyfists, and August Burns Red. Stage Fright is known for their high-energy local shows and powerful lyrics, which often deal with themes of mental health, addiction, and personal struggle. 
+        </p>
+
       </div>
     </main>
     <footer></footer>

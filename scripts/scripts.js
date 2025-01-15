@@ -12,4 +12,12 @@ $(document).ready(function() {
     $(window).resize(function() {
         adjustNavBrandsHolder();
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#navbar').addClass('scroll-navbar');
+        } else {
+            $('#navbar').removeClass('scroll-navbar');
+        }
+    });
 });
