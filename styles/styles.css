@@ -86,6 +86,10 @@ footer {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.scroll-main-logo {
+    width: 124px!important;
+}
+
 .single {
     background-color: rgb(227, 227, 227);
     text-align: center;
@@ -191,6 +195,11 @@ footer {
 
 #social-media:hover {
     background-color: rgba(27, 27, 27, .4);
+}
+
+#main-logo {
+    width: 224px;
+    transition: all .8s ease;
 }
 
 #navbar-dropdown {

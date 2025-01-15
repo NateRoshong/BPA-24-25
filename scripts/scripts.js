@@ -17,8 +17,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
             $('#navbar').addClass('scroll-navbar');
+            $('#main-logo').addClass('scroll-main-logo');
         } else {
             $('#navbar').removeClass('scroll-navbar');
+            $('#main-logo').removeClass('scroll-main-logo');
         }
     });
 });
