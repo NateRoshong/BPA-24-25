@@ -171,6 +171,13 @@ footer {
     background-attachment: fixed;
 }
 
+.background-img-2 {
+    background-image: url("../imgs/purpleguitar.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 /*ID STYLING*/
 #social-media {
     display: none;
@@ -208,6 +215,7 @@ footer {
 
 #tour {
     padding: 64px 0;
+    background-color: rgba(27, 27, 27, 0.8);
 }
 
 #tour h1 {
