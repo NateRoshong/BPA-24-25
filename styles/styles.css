@@ -11,6 +11,11 @@
 /*design consistency notes:
  selectors are mentioned in the order they appear on index.html
 */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body{
     background-color: rgb(27, 27, 27);
     color: white;
