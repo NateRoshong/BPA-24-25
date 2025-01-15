@@ -17,10 +17,12 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
             $('#navbar').addClass('scroll-navbar');
-            $('#main-logo').addClass('scroll-main-logo');
+            $('#main-logo').css('width', '10vw');
+        } else if ($(this).scrollTop() > 25) {
+            $('#main-logo').css('width', '20vw');
         } else {
             $('#navbar').removeClass('scroll-navbar');
-            $('#main-logo').removeClass('scroll-main-logo');
+            $('#main-logo').css('width', '30vw');
         }
     });
 });

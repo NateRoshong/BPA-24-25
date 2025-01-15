@@ -86,10 +86,6 @@ footer {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.scroll-main-logo {
-    width: 124px!important;
-}
-
 .single {
     background-color: rgb(227, 227, 227);
     text-align: center;
@@ -198,7 +194,9 @@ footer {
 }
 
 #main-logo {
-    width: 224px;
+    width: 30vw;
+    max-width: 336px;
+    min-width: 112px;
     transition: all .8s ease;
 }
 
