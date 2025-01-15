@@ -13,8 +13,9 @@ $(document).ready(function() {
         adjustNavBrandsHolder();
     });
 
+    //When the user scrolls down 50px from the top of the document add class scroll-navbar to navbar
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 50) {
             $('#navbar').addClass('scroll-navbar');
         } else {
             $('#navbar').removeClass('scroll-navbar');
