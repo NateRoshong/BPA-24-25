@@ -65,10 +65,12 @@ footer {
 .navbar-etc li {
     width: 100%;
     padding: .14em .4em;
+    transition: padding .5s ease;
 }
 
 .navbar-etc li:hover {
     background-color: rgba(0, 174, 208, 0.3);
+    padding-left: .6em;
 } 
 
 .scroll-navbar {
@@ -125,8 +127,8 @@ footer {
 }
 
 .single button:active {
+    transition: background-color 0s ease;
     background-color: rgb(87, 187, 187);
-    padding-top: .6em;
 }
 
 .get-tickets {
