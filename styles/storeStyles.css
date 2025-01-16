@@ -1,0 +1,91 @@
+/*UNIQUE: STORE PAGE*/
+#store {
+    background-color: rgb(227, 227, 227);
+}
+
+#store-main-logo {
+    width: 6vw;
+    max-width: 336px;
+    min-width: 112px;
+    transition: all .8s ease;
+}
+
+#shopping {
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+.navbar-left, .navbar-right {
+    flex: 1;
+}
+
+#logo-container {
+    flex: 1;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.size-selector {
+    background-color: rgba(27, 27, 27, .2);
+    border-radius: 3px;
+    padding: 0 .4em;
+}
+
+.add-cart {
+    background-color: rgb(87, 187, 187);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    transition: all .5s ease;
+}
+
+.add-cart:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 157, 157);
+    font-size: 1.05em;
+}
+
+@media (max-width: 767px) {
+    .merch {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .merch {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .merch {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 20px;
+    background: rgb(27, 27, 27);
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: rgb(57, 57, 57);
+    box-shadow: 0 0 5px rgb(17, 117, 117);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    background: rgb(57, 57, 57);
+    box-shadow: 0 0 10px rgb(57, 157, 157);
+}
