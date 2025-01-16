@@ -25,6 +25,7 @@
 
     <!--Non-bootstrap Sources-->
     <link rel="stylesheet" href="/styles/styles.css"/>
+    <link rel="stylesheet" href="/styles/storeStyles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/scripts/scripts.js"></script>
 
@@ -34,68 +35,143 @@
       crossorigin="anonymous">
     </script>
   </head>
-  <body>
+  <body id="store">
     <!--Navbar start-->
-    <nav id="navbar" class="navbar-expand-lg">
-        <div class="align-items-center row">
-          <div class="col-4">
-            <div class="dropdown">
-              <!--Social media button-->
-              <button type="button" id="social-media" class="btn" data-bs-toggle="dropdown">
-                SOCIALS
-              </button>
-              <!--Houses social links-->
-              <ul id="nav-brands-holder" class="navbar-nav flex-row nav-brands">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-spotify fa-lg"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-brands fa-apple fa-lg"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-4 text-center">
-            <!--Logo for navbar-->
-            <a class="navbar-brand col" href="/index.html">
-              <img id="main-logo" src="/imgs/stageFrightTypography(fin).png"/>
-            </a>
-          </div>
-          <div class="col text-end">
-            <div class="dropdown">
-              <button type="button" id="navbar-dropdown" class="btn" data-bs-toggle="dropdown">
-                <!--Hamburger button html-->
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <!--END: Hamburger button html-->
-              </button>
-              <ul class="dropdown-menu navbar-etc">
-                <li class="nav-item"><a class="nav-link" href="#tour">TOURS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#band">BAND</a></li>
-                <li class="nav-item"><a class="nav-link" href="/store.html">STORE</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
-              </ul>
+    <nav id="navbar" class="navbar-expand-lg d-flex justify-content-between align-items-center">
+      <div class="navbar-left d-flex justify-content-start">
+        <!-- Empty div to push logo to center -->
+      </div>
+      <div id="logo-container" class="d-flex justify-content-center align-items-center">
+        <!--Logo for navbar-->
+        <a class="navbar-brand" href="/index.html">
+          <img id="store-main-logo" src="/imgs/stageFrightTypography(fin).png"/>
+        </a>
+      </div>
+      <div class="navbar-right d-flex justify-content-end">
+        <a id="shopping" class="nav-link" href="#"><i class="icon-dark fa-solid fa-shopping-cart"></i></a>
+      </div>
+    </nav>
+    <!--END: Navbar-->
+
+    <main class="container mt-5 pt-5">
+      <div class="row text-center">
+
+        <!-- Merch Template -->
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-1" id="size-label-1">Size: M</label>
+                <input type="range" class="form-range" id="size-range-1" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
             </div>
           </div>
         </div>
-      </nav>
-      <!--END: Navbar-->
+
+        <!-- Repeat  -->
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-2" id="size-label-2">Size: M</label>
+                <input type="range" class="form-range" id="size-range-2" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-3" id="size-label-3">Size: M</label>
+                <input type="range" class="form-range" id="size-range-3" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-4" id="size-label-4">Size: M</label>
+                <input type="range" class="form-range" id="size-range-4" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-5" id="size-label-5">Size: M</label>
+                <input type="range" class="form-range" id="size-range-5" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-6" id="size-label-6">Size: M</label>
+                <input type="range" class="form-range" id="size-range-6" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-7" id="size-label-7">Size: M</label>
+                <input type="range" class="form-range" id="size-range-7" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 merch">
+          <div class="card border-0">
+            <img src="/imgs/purpleguitar.jpg" class="card-img-top" alt="Merch Image">
+            <div class="card-body">
+              <h5 class="card-title">Merch Item</h5>
+              <p class="card-text">Price</p>
+              <div class="size-selector">
+                <label for="size-range-8" id="size-label-8">Size: M</label>
+                <input type="range" class="form-range" id="size-range-8" min="0" max="3" value="1" step="1">
+              </div>
+              <button class="btn add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
-</html></li>
+</html>
