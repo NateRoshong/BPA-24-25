@@ -40,7 +40,10 @@ $(document).ready(function() {
     // Update size label based on range input
     function updateSizeLabel(rangeInput, labelId) {
         const sizes = ['S', 'M', 'L', 'XL'];
-        $('#' + labelId).text('Size: ' + sizes[$(rangeInput).val()]);
+        const capAndBeanieSizes = ['Infant', 'Toddler', 'Child', 'Youth', 'Adult'];
+        const isCapOrBeanie = $(rangeInput).attr('id').includes('size-range-7') || $(rangeInput).attr('id').includes('size-range-8');
+        const sizeArray = isCapOrBeanie ? capAndBeanieSizes : sizes;
+        $('#' + labelId).text('Size: ' + sizeArray[$(rangeInput).val()]);
     }
     // Attach event listeners to all range inputs
     $('input[type="range"]').each(function(index) {
@@ -123,27 +126,78 @@ $(document).ready(function() {
     $('.add-cart').on('click', function() {
         const $card = $(this).closest('.card');
         const itemName = $card.find('.card-title').text();
-        const itemPrice = $card.find('.card-text').text();
+        const itemPrice = parseFloat($card.find('.card-text').text().replace('$', ''));
         const itemSize = $card.find('.size-selector label').text();
 
-        const cartItem = `
-            <div class="cart-item d-flex justify-content-between align-items-center">
-                <div>
-                    <p>${itemName}</p>
-                    <p>${itemSize}</p>
-                    <p>${itemPrice}</p>
-                </div>
-                <button class="btn btn-sm btn-danger remove-cart-item">Remove</button>
-            </div>
-        `;
+        let $existingCartItem = null;
+        $('#offcanvasCart .cart-item').each(function() {
+            const $cartItem = $(this);
+            const cartItemName = $cartItem.find('.item-name').text();
+            const cartItemSize = $cartItem.find('.item-size').text();
+            if (cartItemName === itemName && cartItemSize === itemSize) {
+                $existingCartItem = $cartItem;
+                return false; // break the loop
+            }
+        });
 
-        $('#offcanvasCart .offcanvas-body').append(cartItem);
+        if ($existingCartItem) {
+            const $quantityElement = $existingCartItem.find('.item-quantity');
+            const currentQuantity = parseInt($quantityElement.text().replace('Quantity: ', ''));
+            $quantityElement.text('Quantity: ' + (currentQuantity + 1));
+        } else {
+            const cartItem = `
+                <div class="cart-item d-flex justify-content-between align-items-center p-2 mb-2 border rounded">
+                    <div>
+                        <p class="item-name mb-1 font-weight-bold">${itemName}</p>
+                        <p class="item-size mb-1 text-muted">${itemSize}</p>
+                        <p class="item-price mb-1">$${itemPrice.toFixed(2)}</p>
+                        <p class="item-quantity mb-0">Quantity: 1</p>
+                    </div>
+                    <button class="btn btn-sm btn-danger remove-cart-item">Remove</button>
+                </div>
+            `;
+            $('#offcanvasCart .offcanvas-body').append(cartItem);
+        }
+
+        $('#offcanvasCart .empty-cart-text').hide();
+        updateCartTotal();
     });
 
     // Remove from cart functionality
     $(document).on('click', '.remove-cart-item', function(event) {
         event.stopPropagation();
-        $(this).closest('.cart-item').remove();
+        const $cartItem = $(this).closest('.cart-item');
+        const $quantityElement = $cartItem.find('.item-quantity');
+        const currentQuantity = parseInt($quantityElement.text().replace('Quantity: ', ''));
+        if (currentQuantity > 1) {
+            $quantityElement.text('Quantity: ' + (currentQuantity - 1));
+        } else {
+            $cartItem.remove();
+        }
+        updateCartTotal();
+        if ($('#offcanvasCart .cart-item').length === 0) {
+            $('#offcanvasCart .empty-cart-text').show();
+        }
+    });
+
+    // Update cart total
+    function updateCartTotal() {
+        let total = 0;
+        $('#offcanvasCart .cart-item').each(function() {
+            const itemPrice = parseFloat($(this).find('.item-price').text().replace('$', ''));
+            const itemQuantity = parseInt($(this).find('.item-quantity').text().replace('Quantity: ', ''));
+            total += itemPrice * itemQuantity;
+        });
+        $('#cart-total').text('Total: $' + total.toFixed(2));
+    }
+
+    // Checkout functionality
+    $('#checkout-button').on('click', function() {
+        $('#offcanvasCart .cart-item').remove();
+        updateCartTotal();
+        $('#offcanvasCart').removeClass('show');
+        $('body').removeClass('offcanvas-open');
+        $('#offcanvasCart .empty-cart-text').show();
     });
 
 });

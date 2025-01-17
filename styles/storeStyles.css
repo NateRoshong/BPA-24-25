@@ -21,6 +21,17 @@ header {
     padding-right: 1em;
 }
 
+#shopping:hover {
+    cursor: pointer;
+}
+
+#checkout-button {
+    background-color: rgb(17, 177, 17);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
 .navbar-left, .navbar-right {
     flex: 1;
 }

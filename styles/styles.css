@@ -167,6 +167,11 @@ footer {
     z-index: 0;
 }
 
+.carousel-indicators {
+    background-color: rgba(27, 27, 27, .2);
+    border
+}
+
 .background-img::before {
     content: "";
     background-image: url("../imgs/pot-backImage.png");
