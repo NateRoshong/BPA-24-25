@@ -1,4 +1,10 @@
 /*UNIQUE: STORE PAGE*/
+
+header {
+    color: rgb(57, 57, 57);
+    margin-bottom: 2em;
+}
+
 #store {
     background-color: rgb(227, 227, 227);
 }
