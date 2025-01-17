@@ -8,3 +8,9 @@ Code Assistance provided partially by W3 Schools
 
 Placeholder image sourced from: 
 https://www.istockphoto.com/photo/unrecognizable-person-plucking-the-strings-of-the-electric-guitar-at-a-concert-gm1387156997-445172926
+
+pot-1st bg imag = Copilot AI image generation, prompt "A photorealistic background image for a bands website with the main colors black and white, light blue accents, featuring the bands name Stage Fright, without a crowd"
+
+1st bg img = https://perchance.org/ai-photo-generator, prompt "a band with main colors of black, white and light blue, playing in front of a crowd. the band is slightly far away in the photo but you can make out that theres 2 guitars, a bass, and a drum kit"
+
+2nd bg img = Copilot AI image generation, prompt "A close-up side shot of a band with two guitarists, one bassist, and a drummer, no faces, color scheme of black, white, light blue"

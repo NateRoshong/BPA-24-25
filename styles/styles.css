@@ -162,20 +162,66 @@ footer {
     text-align: left;
 }
 
-.background-img{
-    background-image: url("../imgs/purpleguitar.jpg");
-    background-size:contain;
-    padding: 30vw 0vw 26vw 0vw;
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.background-img {
+    position: relative;
+    z-index: 0;
 }
 
-.background-img-2 {
-    background-image: url("../imgs/purpleguitar.jpg");
+.background-img::before {
+    content: "";
+    background-image: url("../imgs/pot-backImage.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(4px) brightness(0.4);
+    z-index: -1;
+}
+
+.background-img-2 {
+    position: relative;
+    z-index: 0;
+}
+
+.background-img-2::before {
+    content: "";
+    background-image: url("../imgs/backImage2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(7px) brightness(0.4);
+    z-index: -1;
+}
+
+.album {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album-cover {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.unavailable {
+    filter: grayscale(100%) blur(2px);
+    pointer-events: none;
 }
 
 .footer-link {
@@ -315,6 +361,11 @@ footer {
     font-family:'Franklin Gothic', sans-serif
 }
 
+#music {
+    padding: 64px 0;
+    text-align: center;
+}
+
 /*@MEDIAQUERIES*/
 @media (min-width: 900px) {
     .nav-brands li {
@@ -327,6 +378,12 @@ footer {
         padding-left: .4em;
     }
     
+}
+
+@media (min-width: 768px) {
+    .album {
+        margin: 20px auto;
+    }
 }
 
 @media (max-width: 599px) {
