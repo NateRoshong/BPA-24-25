@@ -105,6 +105,45 @@ $(document).ready(function() {
         });
     });
 
-    
+    // Shopping cart off-canvas functionality
+    $('#shopping').on('click', function() {
+        $('#offcanvasCart').toggleClass('show');
+        $('body').toggleClass('offcanvas-open');
+    });
+
+    // Close off-canvas when clicking outside of it
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('#offcanvasCart, #shopping').length) {
+            $('#offcanvasCart').removeClass('show');
+            $('body').removeClass('offcanvas-open');
+        }
+    });
+
+    // Add to cart functionality
+    $('.add-cart').on('click', function() {
+        const $card = $(this).closest('.card');
+        const itemName = $card.find('.card-title').text();
+        const itemPrice = $card.find('.card-text').text();
+        const itemSize = $card.find('.size-selector label').text();
+
+        const cartItem = `
+            <div class="cart-item d-flex justify-content-between align-items-center">
+                <div>
+                    <p>${itemName}</p>
+                    <p>${itemSize}</p>
+                    <p>${itemPrice}</p>
+                </div>
+                <button class="btn btn-sm btn-danger remove-cart-item">Remove</button>
+            </div>
+        `;
+
+        $('#offcanvasCart .offcanvas-body').append(cartItem);
+    });
+
+    // Remove from cart functionality
+    $(document).on('click', '.remove-cart-item', function(event) {
+        event.stopPropagation();
+        $(this).closest('.cart-item').remove();
+    });
 
 });

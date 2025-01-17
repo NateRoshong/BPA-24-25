@@ -53,6 +53,16 @@
     </nav>
     <!--END: Navbar-->
 
+    <!-- Off-canvas shopping cart -->
+    <div id="offcanvasCart" class="offcanvas offcanvas-end" tabindex="-1">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Shopping Cart</h5>
+            <button type="button" class="btn-close" aria-label="Close" onclick="$('#offcanvasCart').removeClass('show'); $('body').removeClass('offcanvas-open');"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Your cart is currently empty.</p>
+        </div>
+    </div>
 
     <main class="container mt-5 pt-5">
       <header class="text-center">
