@@ -142,8 +142,8 @@ $(document).ready(function() {
 
         if ($existingCartItem) {
             const $quantityElement = $existingCartItem.find('.item-quantity');
-            const currentQuantity = parseInt($quantityElement.text().replace('Quantity: ', ''));
-            $quantityElement.text('Quantity: ' + (currentQuantity + 1));
+            const currentQuantity = parseInt($quantityElement.text());
+            $quantityElement.text(currentQuantity + 1);
         } else {
             const cartItem = `
                 <div class="cart-item d-flex justify-content-between align-items-center p-2 mb-2 border rounded">
@@ -151,7 +151,11 @@ $(document).ready(function() {
                         <p class="item-name mb-1 font-weight-bold">${itemName}</p>
                         <p class="item-size mb-1 text-muted">${itemSize}</p>
                         <p class="item-price mb-1">$${itemPrice.toFixed(2)}</p>
-                        <p class="item-quantity mb-0">Quantity: 1</p>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-secondary change-quantity" data-change="-1">-</button>
+                            <p class="item-quantity mb-0 mx-2 p-1 border rounded bg-light">${1}</p>
+                            <button class="btn btn-sm btn-secondary change-quantity" data-change="1">+</button>
+                        </div>
                     </div>
                     <button class="btn btn-sm btn-danger remove-cart-item">Remove</button>
                 </div>
@@ -163,17 +167,24 @@ $(document).ready(function() {
         updateCartTotal();
     });
 
-    // Remove from cart functionality
-    $(document).on('click', '.remove-cart-item', function(event) {
+    // Change quantity functionality
+    $(document).on('click', '.change-quantity', function(event) {
         event.stopPropagation();
         const $cartItem = $(this).closest('.cart-item');
         const $quantityElement = $cartItem.find('.item-quantity');
-        const currentQuantity = parseInt($quantityElement.text().replace('Quantity: ', ''));
-        if (currentQuantity > 1) {
-            $quantityElement.text('Quantity: ' + (currentQuantity - 1));
-        } else {
-            $cartItem.remove();
+        const currentQuantity = parseInt($quantityElement.text());
+        const change = parseInt($(this).data('change'));
+        const newQuantity = currentQuantity + change;
+        if (newQuantity > 0) {
+            $quantityElement.text(newQuantity);
         }
+        updateCartTotal();
+    });
+
+    // Remove from cart functionality
+    $(document).on('click', '.remove-cart-item', function(event) {
+        event.stopPropagation();
+        $(this).closest('.cart-item').remove();
         updateCartTotal();
         if ($('#offcanvasCart .cart-item').length === 0) {
             $('#offcanvasCart .empty-cart-text').show();
@@ -185,7 +196,7 @@ $(document).ready(function() {
         let total = 0;
         $('#offcanvasCart .cart-item').each(function() {
             const itemPrice = parseFloat($(this).find('.item-price').text().replace('$', ''));
-            const itemQuantity = parseInt($(this).find('.item-quantity').text().replace('Quantity: ', ''));
+            const itemQuantity = parseInt($(this).find('.item-quantity').text());
             total += itemPrice * itemQuantity;
         });
         $('#cart-total').text('Total: $' + total.toFixed(2));

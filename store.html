@@ -192,5 +192,124 @@
         </div>
       </div>
     </main>
+
+    <footer>
+      <div>
+        <div class="row">
+          <div id="footer-emails" class="col-md-6 text-end">
+            <p>+1 (234) 567-8910 | <a class="footer-link" href="mailto:help@stagefrightband.com" data-bs-toggle="tooltip" title="Customer service">help@stagefrightband.com</a></p>
+            <p><a class="footer-link" href="mailto:info@stagefrightband.com" target="_blank" data-bs-toggle="tooltip" title="We read these!">info@stagefrightband.com</a></p>
+          </div>
+          <div class="col-md-6">
+            <p><a class="footer-link" data-bs-toggle="modal" data-bs-target="#newsletterModal" >Newsletter</a></p>
+          <p><a class="footer-link" data-bs-toggle="modal" data-bs-target="#bookingModal">Booking</a></p>
+          </div>
+        </div>
+        <div class="text-center">
+          <p>&copy; 2024 Stage Fright. <a class="footer-link" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a> | <a class="footer-link" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions.</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- For Modal Storage -->
+      <!-- Newsletter modal -->
+    <div class="modal" id="newsletterModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <img src="/imgs/stageFrightTypography(fin).png">
+            <h4 class="modal-title">Sign Up For Our Newsletter</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="form mb-3 mt-3">
+              <input id="news-letter-form" type="text" class="form-control" placeholder="Email*" required>
+            </div>
+            <p>We use email and targeted ads to send you updates, offers, and marketing based on your info (e.g., email, location, browsing history). For details, see our Privacy Policy. You can unsubscribe anytime via the link in our emails.</p>
+            <div class="form-check terms">
+              <input class="form-check-input" type="checkbox" id="news" name="news" value="something" checked>
+              <label class="form-check-label">I would like to recieve updates about the band and related information such as tours, local shows, new members, etc...</label>
+            </div>
+            <div class="form-check terms">
+              <input class="form-check-input" type="checkbox" id="storeupdates" name="storeupdates" value="something">
+              <label class="form-check-label">I would like to recieve updates about new drops in the Stage Fright store.</label>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button id="news-submit" type="submit" class="btn modal-submit" data-bs-dismiss="modal">Sign Up</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <!-- Booking modal -->
+    <div class="modal" id="bookingModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <img src="/imgs/stageFrightTypography(fin).png">
+            <h4 class="modal-title">Book a show</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="form mb-3 mt-3">
+              <input id="booking-form" type="text" class="form-control" placeholder="Email*" required>
+            </div>
+            <div class="form mb-3 mt-3">
+              <input id="booking-name" type="text" class="form-control" placeholder="Name*" required>
+            </div>
+            <div class="form mb-3 mt-3">
+              <textarea type="text" class="form-control" placeholder="Message" rows="4"></textarea>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button id="booking-submit" type="submit" class="btn modal-submit" data-bs-dismiss="modal">Send</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Privacy modal -->
+    <div class="modal" id="privacyModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <img src="/imgs/stageFrightTypography(fin).png">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>This privacy policy is a joke. We don't actually collect any data- because we don't know how to. If we did, we would probably just use it to buy food. By using our site, you agree to let us buy food with the money earned from selling your data in the off chance we figure out how. If you have any concerns, please contact our imaginary legal team. Thank you for your understanding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms modal -->
+    <div class="modal" id="termsModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <img src="/imgs/stageFrightTypography(fin).png">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>By accessing and using this website, you agree to comply with and be bound by the following terms and conditions of use, which, together with our privacy policy, govern Stage Fright's relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.</p>
+            <p>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</p>
+            <p>Unauthorized use of this website probably won't give rise to a claim for damages and/or be a criminal offense, but we should warn you anyways.</p>
+            <p>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services, or information available through this website meet your specific requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
