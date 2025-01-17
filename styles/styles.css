@@ -188,6 +188,58 @@ footer {
     text-decoration: underline;
 }
 
+.footer-mobile {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgb(27, 27, 27);
+}
+
+.modal-header {
+    background-color: rgb(227, 227, 227);
+    color: rgb(57, 57, 57);
+}
+
+.modal-header img {
+    margin-right: 1em;
+    width: 5em;
+}
+
+.modal-body {
+    font-family: 'Franklin Gothic', sans-serif;
+}
+
+.modal-body .form {
+    background-color: rgb(57, 57, 57);
+}
+
+.terms {
+    font-size: .8em;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.modal .btn-close {
+    background-color: rgb(255, 0, 0);
+}
+
+.modal-submit {
+    background-color: rgb(37, 137, 137)!important;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1em;
+    padding: .2em 1em;
+    border-radius: 8px;
+    transition: background-color .2s ease;
+}
+
+.modal-submit:hover {
+    background-color: rgb(37, 87, 87)!important;
+}
+
 /*ID STYLING*/
 #social-media {
     display: none;
