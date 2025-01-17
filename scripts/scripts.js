@@ -136,7 +136,7 @@ $(document).ready(function() {
             const cartItemSize = $cartItem.find('.item-size').text();
             if (cartItemName === itemName && cartItemSize === itemSize) {
                 $existingCartItem = $cartItem;
-                return false; // break the loop
+                return false;
             }
         });
 

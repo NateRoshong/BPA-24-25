@@ -1,5 +1,20 @@
 /*UNIQUE: STORE PAGE*/
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(227, 227, 227);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: 7em;
+}
+
 header {
     color: rgb(57, 57, 57);
     margin-bottom: 2em;
@@ -32,14 +47,14 @@ header {
     transition: all .5s ease;
 }
 
-.navbar-left, .navbar-right {
-    flex: 1;
-}
 
 #logo-container {
     flex: 1;
 }
 
+.navbar-left, .navbar-right {
+    flex: 1;
+}
 .card {
     background-color: transparent;
 }
@@ -122,19 +137,4 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
     background: rgb(57, 57, 57);
     box-shadow: 0 0 10px rgb(57, 157, 157);
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgb(227, 227, 227);
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    margin-top: 7em;
 }
