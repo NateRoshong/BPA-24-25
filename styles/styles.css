@@ -215,8 +215,9 @@ footer {
 }
 
 .album-cover {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
+    padding-bottom: 30px;
 }
 
 .unavailable {
